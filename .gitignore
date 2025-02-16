@@ -1,0 +1,23 @@
+.env
+
+# VS Code configuration files and directories
+.vscode/
+.vscode/*
+.vscode/**
+.vscode/**/*
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+.vscode/c_cpp_properties.json  # If you use C/C++ extension
+.vscode/cmake-kits.json       # If you use CMake tools
+.vscode/cmake-cache/          # If you use CMake tools
+.vscode/ipch/                # Intellisense precompiled headers
+.vscode/msbuild/             # MSBuild files
+.vscode/vcpkg/               # Vcpkg files
+.vscode/arduino/             # Arduino IDE files if used in VS Code
+.vscode/settings.json        # User-specific settings (often better kept out of repo)
+
+# Other VS Code related files that might be in the root
+*.code-workspace
+*.code-profile

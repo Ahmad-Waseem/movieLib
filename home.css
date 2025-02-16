@@ -1,0 +1,51 @@
+:root {
+    --primary: #ffffeb;
+    --secondary: #2242B3;
+    --accent: #C79D2A;
+    --light: #001047;
+}
+
+
+
+.bd-navbar{
+    padding: .75rem 0;
+    background-color: var(--primary);
+    box-shadow: 0 8px 6px rgba(49, 47, 55, 0.65), inset 0 -1px 0 rgba(230, 230, 242, 0.75)
+}
+
+
+body {
+    background-color: var(--light);
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,16,71,0.9);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.rating-badge {
+    background: var(--accent);
+    color: var(--primary);
+}
