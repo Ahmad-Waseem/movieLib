@@ -47,13 +47,7 @@ function displayMovies(movies) {
                 <img src="${movie.Poster}" class="card-img-top" alt="${movie.Title}">
                 <div class="card-body">
                     <h5 class="card-title">${movie.Title}</h5>
-                    <span class="badge rating-badge">⭐ ${details.Ratings[0].Value || 'N/A'}</span>
-                </div>
-                <div class="card-overlay">
-                    <h5>${movie.Title}</h5>
-                    <p>Year: ${movie.Year}</p>
-                    <p>Type: ${movie.Type}</p>
-                    <p>ID: ${movie.imdbID}</p>
+                    <span class="badge rating-star">🌟 ${details.Ratings[0].Value || 'N/A'}</span> 
                 </div>
                 <!--<div id="PopupBox" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; padding: 10px; z-index: 1000;"></div>-->
 
@@ -121,6 +115,7 @@ function showPopupBox(movie, details, card) {
         PopupBox.style.left = (curr_card.right + window.scrollX + 10) + 'px';
     }
     PopupBox.style.display = 'block';
+    $("#PopupBox").fadeIn(1500);
 
 }
 

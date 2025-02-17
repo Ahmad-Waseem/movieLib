@@ -32,20 +32,7 @@ body {
     object-fit: cover;
 }
 
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,16,71,0.9);
-    color: white;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.rating-badge {
+.rating-star {
     background: var(--accent);
     color: var(--primary);
 }
